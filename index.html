@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лінійне завантаження зображень</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>Лінійне завантаження зображень</h1>
+    <p>Прокрутіть сторінку вниз: кожне зображення завантажується лише тоді, коли наближається до видимої області. Відкрийте вкладку «Network» у DevTools, щоб це перевірити.</p>
+    <div class="toolbar">
+      <button id="load-all" type="button">Завантажити всі зображення</button>
+      <button id="reset" class="secondary" type="button">Перезавантажити сторінку</button>
+    </div>
+  </header>
+
+  <main>
+    <figure>
+      <img class="lazy" alt="Пейзаж 1"
+           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+           data-src="https://picsum.photos/id/1015/1600/900">
+      <figcaption>Зображення 1 (1600×900)</figcaption>
+    </figure>
+
+    <figure>
+      <img class="lazy" alt="Пейзаж 2"
+           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+           data-src="https://picsum.photos/id/1016/1600/900">
+      <figcaption>Зображення 2 (1600×900)</figcaption>
+    </figure>
+
+    <figure>
+      <img class="lazy" alt="Пейзаж 3"
+           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+           data-src="https://picsum.photos/id/1018/1600/900">
+      <figcaption>Зображення 3 (1600×900)</figcaption>
+    </figure>
+
+    <figure>
+      <img class="lazy" alt="Пейзаж 4"
+           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+           data-src="https://picsum.photos/id/1019/1600/900">
+      <figcaption>Зображення 4 (1600×900)</figcaption>
+    </figure>
+
+    <figure>
+      <img class="lazy" alt="Пейзаж 5"
+           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+           data-src="https://picsum.photos/id/1020/1600/900">
+      <figcaption>Зображення 5 (1600×900)</figcaption>
+    </figure>
+
+    <figure>
+      <img class="lazy" alt="Пейзаж 6"
+           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+           data-src="https://picsum.photos/id/1021/1600/900">
+      <figcaption>Зображення 6 (1600×900)</figcaption>
+    </figure>
+
+    <figure>
+      <img class="on-click" alt="Натисніть, щоб завантажити"
+           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+           data-src="https://picsum.photos/id/1024/1600/900"
+           tabindex="0" role="button">
+      <figcaption>Натисніть на сірий блок, щоб завантажити це зображення вручну</figcaption>
+    </figure>
+  </main>
+
+ <script src="index.js"></script>
+</body>
+</html>
